@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": "lantern-at-lake-merrow",
+      "title": "The Lantern at Lake Merrow",
+      "author": "Avery Finch",
+      "asset": "assets/books/prototype_book.json",
+      "chunks": 25,
+      "coverAsset": "assets/books/covers/lantern_at_lake_merrow.png"
+    },
+    {
+      "id": "alice-in-wonderland",
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "asset": "assets/books/alice_in_wonderland.json",
+      "chunks": 977,
+      "coverAsset": "assets/books/covers/alice_in_wonderland.jpg"
+    },
+    {
+      "id": "the-time-machine",
+      "title": "The Time Machine",
+      "author": "H. G. Wells",
+      "asset": "assets/books/the_time_machine.json",
+      "chunks": 1179,
+      "coverAsset": "assets/books/covers/the_time_machine.jpg"
+    },
+    {
+      "id": "pride-and-prejudice",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "asset": "assets/books/pride_and_prejudice.json",
+      "chunks": 4666,
+      "coverAsset": "assets/books/covers/pride_and_prejudice.jpg"
+    },
+    {
+      "id": "adventures-of-sherlock-holmes",
+      "title": "The Adventures of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "asset": "assets/books/sherlock_holmes.json",
+      "chunks": 3878,
+      "coverAsset": "assets/books/covers/sherlock_holmes.jpg"
+    },
+    {
+      "id": "frankenstein",
+      "title": "Frankenstein; or, the modern prometheus",
+      "author": "Mary Wollstonecraft Shelley",
+      "asset": "assets/books/frankenstein.json",
+      "chunks": 2692,
+      "coverAsset": "assets/books/covers/frankenstein.jpg"
+    }
+  ]
+}
