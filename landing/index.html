@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Broll is a local-first reading companion for continuing a book one small snippet at a time."
+    />
+    <meta name="theme-color" content="#f4f6f2" />
+    <title>Broll — Read the next page</title>
+    <link rel="icon" type="image/png" href="assets/broll_logo_transparent.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/Literata-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Broll home">
+          <span class="brand-mark">
+            <img src="assets/broll_logo_transparent.png" alt="" />
+          </span>
+          <span class="brand-name">Broll</span>
+          <span class="brand-note">a quiet reading app</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Open navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#why">Why Broll</a>
+          <a href="#how">How it works</a>
+          <a class="nav-github" href="https://github.com/ldagar315/broll" target="_blank" rel="noreferrer">
+            View on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" aria-labelledby="hero-title">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>Made for the in-between moments</p>
+            <h1 id="hero-title">Read the next page.<br /><em>Not the next hundred posts.</em></h1>
+            <p class="hero-intro">
+              I built Broll after realizing I could scroll anywhere, but couldn't carry a book
+              everywhere. Now a book can meet me in the small spaces — one snippet at a time.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/ldagar315/broll" target="_blank" rel="noreferrer">
+                Explore the project <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-quiet" href="#how">See the small idea <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-meta" aria-label="Project details">
+              <span><strong>20</strong> word reading chunks</span>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <span>local-first</span>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <span>Flutter / Android</span>
+            </div>
+          </div>
+
+          <div class="hero-art reveal reveal-delay-1" aria-label="A mockup of the Broll reader">
+            <div class="art-wash"></div>
+            <div class="art-grid" aria-hidden="true"></div>
+
+            <div class="art-annotation annotation-top">
+              <span class="annotation-number">01</span>
+              <span>the feed, softened</span>
+            </div>
+
+            <div class="phone-shadow" aria-hidden="true"></div>
+            <div class="phone">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <div class="reader-topbar">
+                  <div class="reader-brand">
+                    <span class="reader-logo"><img src="assets/broll_logo_transparent.png" alt="" /></span>
+                    <span>Broll</span>
+                  </div>
+                  <button class="reader-menu" type="button" aria-label="Reader menu">•••</button>
+                </div>
+
+                <div class="reader-content">
+                  <p class="reader-kicker">The Time Machine</p>
+                  <h2 class="reader-title">Chapter I<br /><span>Time is a strange thing.</span></h2>
+                  <div class="reader-progress" aria-label="12 percent through the book">
+                    <div class="reader-progress-line"><span></span></div>
+                    <span>12%</span>
+                  </div>
+
+                  <div class="snippet-stack">
+                    <div class="snippet snippet-muted snippet-top" aria-hidden="true">
+                      <p>There are really four dimensions, three of which we call the three planes of Space…</p>
+                    </div>
+                    <article class="snippet snippet-current">
+                      <div class="snippet-heading">
+                        <span>current snippet</span>
+                        <span class="snippet-pulse" aria-hidden="true"></span>
+                      </div>
+                      <p id="snippet-text">The distinction between Time and any of the three dimensions of Space is only this…</p>
+                      <div class="snippet-footer">
+                        <span id="snippet-count">01 / 04</span>
+                        <button class="snippet-next" id="next-snippet" type="button">
+                          next <span aria-hidden="true">↗</span>
+                        </button>
+                      </div>
+                    </article>
+                    <div class="snippet snippet-muted snippet-bottom" aria-hidden="true">
+                      <p>We can move about in all three dimensions, but not freely in Time.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reader-footer">
+                  <span>1 / 14</span>
+                  <span>scroll gently</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cover-stack" aria-hidden="true">
+              <div class="cover cover-back"><img src="assets/covers/alice_in_wonderland.jpg" alt="" /></div>
+              <div class="cover cover-front"><img src="assets/covers/the_time_machine.jpg" alt="" /></div>
+            </div>
+
+            <div class="floating-note">
+              <span class="note-dot" aria-hidden="true"></span>
+              <span>one small snippet<br />at a time</span>
+            </div>
+
+            <div class="art-annotation annotation-bottom">
+              <span class="annotation-line" aria-hidden="true"></span>
+              <span>no infinite scroll</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-strip" aria-label="Broll principles">
+          <div class="signal-item">
+            <span class="signal-index">01</span>
+            <span><strong>Small by design</strong> A moment of reading can fit anywhere.</span>
+          </div>
+          <div class="signal-item">
+            <span class="signal-index">02</span>
+            <span><strong>Yours by default</strong> Your books and progress stay on your device.</span>
+          </div>
+          <div class="signal-item">
+            <span class="signal-index">03</span>
+            <span><strong>Open to tinker</strong> A tiny open-source prototype for curious readers.</span>
+          </div>
+        </section>
+
+        <section class="why section" id="why" aria-labelledby="why-title">
+          <div class="section-side reveal">
+            <p class="eyebrow">01 / the problem</p>
+            <span class="side-rule" aria-hidden="true"></span>
+            <p class="side-caption">The habit was never the book. It was the friction between me and the book.</p>
+          </div>
+
+          <div class="why-main reveal reveal-delay-1">
+            <h2 id="why-title">The feed is frictionless.<br /><em>Reading deserves a doorway.</em></h2>
+            <p class="section-lede">
+              Scrolling always has a next thing waiting. A book asks you to remember where you were,
+              find a quiet minute, and make the first move. Broll makes that first move small enough to keep.
+            </p>
+            <div class="quote-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <p>I could scroll anywhere.<br /><em>I couldn't read anywhere.</em></p>
+              <span class="quote-caption">the reason Broll exists</span>
+            </div>
+            <div class="contrast-row" aria-label="From scrolling to reading">
+              <div class="contrast-item contrast-scroll">
+                <span class="contrast-label">the old loop</span>
+                <strong>scroll</strong>
+                <span>infinite / noisy / gone</span>
+              </div>
+              <span class="contrast-arrow" aria-hidden="true">→</span>
+              <div class="contrast-item contrast-read">
+                <span class="contrast-label">the Broll rhythm</span>
+                <strong>read</strong>
+                <span>bounded / quiet / yours</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="how section" id="how" aria-labelledby="how-title">
+          <div class="how-heading reveal">
+            <p class="eyebrow">02 / the small idea</p>
+            <h2 id="how-title">A reading rhythm<br /><em>for real life.</em></h2>
+            <p class="section-lede">
+              Broll turns long-form reading into a calm vertical feed — familiar enough to start,
+              intentional enough to finish a thought.
+            </p>
+          </div>
+
+          <div class="steps">
+            <article class="step reveal reveal-delay-1">
+              <div class="step-topline"><span>01</span><span class="step-icon icon-add" aria-hidden="true">+</span></div>
+              <div class="step-art step-art-import" aria-hidden="true">
+                <div class="mini-file mini-file-one">EPUB</div>
+                <div class="mini-file mini-file-two">TXT</div>
+                <div class="mini-file mini-file-three">MD</div>
+                <span class="mini-plus">+</span>
+              </div>
+              <h3>Bring your book</h3>
+              <p>Import an EPUB, TXT, or Markdown file. No account, no shelf to maintain somewhere else.</p>
+            </article>
+
+            <article class="step reveal reveal-delay-2">
+              <div class="step-topline"><span>02</span><span class="step-icon icon-place" aria-hidden="true">◎</span></div>
+              <div class="step-art step-art-place" aria-hidden="true">
+                <div class="place-line place-line-one"></div>
+                <div class="place-line place-line-two"></div>
+                <div class="place-line place-line-three"></div>
+                <div class="place-marker"><span></span></div>
+              </div>
+              <h3>Find your place</h3>
+              <p>Your last position is remembered locally, so the next opening is always the right one.</p>
+            </article>
+
+            <article class="step reveal reveal-delay-3">
+              <div class="step-topline"><span>03</span><span class="step-icon icon-next" aria-hidden="true">↗</span></div>
+              <div class="step-art step-art-read" aria-hidden="true">
+                <div class="read-card read-card-back"></div>
+                <div class="read-card read-card-front"><span>the next<br />small thing</span><i></i></div>
+              </div>
+              <h3>Read one small thing</h3>
+              <p>About twenty words at a time. Enough to make progress without asking for your whole afternoon.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="library section" aria-labelledby="library-title">
+          <div class="library-panel">
+            <div class="library-copy reveal">
+              <p class="eyebrow">03 / keep it close</p>
+              <h2 id="library-title">Your library<br /><em>stays yours.</em></h2>
+              <p class="section-lede">
+                Broll is local-first by intention. The books you bring in, the place you reach, and the
+                pace you choose all stay on the device in your hand.
+              </p>
+              <div class="local-badge"><span class="local-dot" aria-hidden="true"></span>stored on device</div>
+            </div>
+
+            <div class="library-visual reveal reveal-delay-1" aria-label="A small selection of books in the Broll library">
+              <div class="library-stamp">A quiet<br />little library</div>
+              <div class="library-covers">
+                <figure class="library-cover library-cover-one"><img src="assets/covers/pride_and_prejudice.jpg" alt="Pride and Prejudice cover" /></figure>
+                <figure class="library-cover library-cover-two"><img src="assets/covers/the_time_machine.jpg" alt="The Time Machine cover" /></figure>
+                <figure class="library-cover library-cover-three"><img src="assets/covers/alice_in_wonderland.jpg" alt="Alice in Wonderland cover" /></figure>
+              </div>
+              <span class="library-caption">the books already waiting</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta section" aria-labelledby="cta-title">
+          <div class="final-cta-copy reveal">
+            <p class="eyebrow eyebrow-light">04 / whenever you're ready</p>
+            <h2 id="cta-title">Pick up where<br /><em>the scroll left you.</em></h2>
+            <p>
+              Broll is a small, open-source Flutter prototype — built to make reading feel possible in
+              the margins of a day.
+            </p>
+            <a class="button button-light" href="https://github.com/ldagar315/broll" target="_blank" rel="noreferrer">
+              Visit the GitHub repo <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="final-cta-mark reveal reveal-delay-1" aria-hidden="true">
+            <div class="final-mark-ring"></div>
+            <img src="assets/broll_logo_transparent.png" alt="" />
+            <span>read the<br />next page</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand"><span class="footer-dot" aria-hidden="true"></span><strong>Broll</strong> / read the next page.</div>
+        <div class="footer-middle">Made for the spaces between things.</div>
+        <div class="footer-links"><span>© <span id="year"></span></span><a href="https://github.com/ldagar315/broll" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
